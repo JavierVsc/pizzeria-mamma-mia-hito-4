@@ -10,7 +10,7 @@ const Pizza = () => {
 
   const getPizza = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/pizzas/p001");
+      const response = await fetch("https://pizzeria-mamma-mia-api-hito-4.onrender.com/api/pizzas/p001");
 
       if (!response.ok) {
         throw new Error("No se pudo cargar la pizza");
