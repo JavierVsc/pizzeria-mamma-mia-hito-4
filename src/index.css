@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.header {
+  min-height: 280px;
+  background-image: url('/Header.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.header p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.pizza-img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.form-container {
+  max-width: 620px;
+}
+
+.footer {
+  font-size: 0.9rem;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #f8f9fa;
+}
+
+.form-page {
+  display: flex;
+  justify-content: center;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 520px;
+}
+
+.pizza-card-img {
+  height: 260px;
+  object-fit: cover;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.ingredients-list li {
+  margin-bottom: 4px;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-box {
+  width: 100%;
+  max-width: 650px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cart-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cart-img {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pizza-detail-card {
+  overflow: hidden;
+}
+
+.pizza-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+}
+
+.pizza-detail-img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .pizza-detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .pizza-detail-img {
+    min-height: 260px;
+  }
+}
